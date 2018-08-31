@@ -2,7 +2,7 @@
 
 	include 'plantilla.php';
 
-	$pdf=new PDF('L','mm',[200,290]);
+	$pdf=new PDF('L','mm',[250,290]);
 
 	$pdf->AddPage();
 
@@ -239,6 +239,7 @@
     $pdf->Row(array(utf8_decode('SubTotal Dañadas'),'SubTotal Manchadas', 'SubTotal Rotas'));
   	
   	}
+
   	$pdf->SetY(92);
   	$pdf->SetX(100);
 	$pdf->SetWidths(array(12.5, 12.5,12.5,12.5,12.5,12.5));
@@ -347,7 +348,322 @@
  	}
 
 
+	//--------------------------------------------------------------------------------
+ 	//								Tercera fila 
+ 	//----
+  	//Tabla de no pagadas no devueltas
+  	$pdf->SetY(45);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(25, 25));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
 
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array(utf8_decode('SubTotal Pagadas'),'SubTotal Manchadas'));
+  	
+  	}
+
+  	//Tabla de Subtotal pagadas y SubnoPagadas 
+  	$pdf->SetY(55);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(12.5,12.5,12.5, 12.5));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+   		$pdf->Row(array('G','CH','G','CH'));
+  	}
+
+  	//Tabla de no pagadas no devueltas
+  	$pdf->SetY(60);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(12.5,12.5,12.5, 12.5));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+  		$pdf->Row(array('1','1','1','1'));
+  	}
+
+  	//--------
+  	//Tabla de no pagadas no devueltas 2
+  	$pdf->SetY(68);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(25, 25));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array(utf8_decode('SubTotal Nopagadas'),'SubTotal Nodevueltas'));
+  	
+	}
+
+
+	//Tabla de Subtotal NOpagadas y SubPagadas 
+  	$pdf->SetY(73);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(12.5,12.5,12.5, 12.5));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+   		$pdf->Row(array('G','CH','G','CH'));
+  	}
+
+  	//Tabla de no pagadas no devueltas
+  	$pdf->SetY(78);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(12.5,12.5,12.5, 12.5));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+  		$pdf->Row(array('1','1','1','1'));
+  	}
+
+  	//-----------
+  	/*Toallas No Pagadas*/
+
+ 	$pdf->SetY(85);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+    	$pdf->Row(array(utf8_decode('Toallas No Pagadas')));
+ 	}
+
+ 	/*Toallas del Rotas dañadas rotas y manchadas en tabla de no pagadas*/
+
+ 	$pdf->SetY(85);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+    	$pdf->Row(array(utf8_decode('Toallas No Pagadas')));
+ 	}
+
+
+ 	/*Toallas total manchadas rotas y dañadas*/
+
+ 	$pdf->SetY(90);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+    	$pdf->Row(array(utf8_decode('Total restas dañadas, manchadas y rotas    $000')));
+ 	}
+
+ 	//---------
+ 	/*Toallas total dañadas*/
+
+ 	$pdf->SetY(95);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+    	$pdf->Row(array(utf8_decode('Total dañadas              $00')));
+ 	}
+
+ 	//---------
+ 	/*Toallas total manchadas*/
+
+ 	$pdf->SetY(100);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+    	$pdf->Row(array(utf8_decode('Total manchadas         $00')));
+ 	}
+
+
+ 	//---------
+ 	/*Toallas total rotas*/
+
+ 	$pdf->SetY(106);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+    	$pdf->Row(array(utf8_decode('Total rotas                    $00')));
+ 	}
+
+ 	//--------
+  	//Tabla de rentas del dia
+  	$pdf->SetY(115);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('Rentas del dia'));
+  	
+	}
+
+	//--------
+  	//Tabla de rentas del dia
+  	$pdf->SetY(120);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('Total rentas del dia         $00'));
+  	
+	}
+
+	//--------
+  	//Total a facturar
+  	$pdf->SetY(125);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('Total a Facturar'));
+  	
+	}
+
+	//--------
+  	//Tabla de rentas del dia + toallas pagadas
+  	$pdf->SetY(130);
+  	$pdf->SetX(180);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('Total rentas del dia + toallas pagadas    $00'));
+  	
+	}
+
+	//--------------------------------------------------------------------------------
+ 	//								Cuerta fila 
+ 	//----
+  	//Tabla de recuperadas
+  	$pdf->SetY(45);
+  	$pdf->SetX(235);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('Recuperadas'));
+  	
+  	}
+
+  	//----
+  	//Tabla de recuperadas
+  	$pdf->SetY(50);
+  	$pdf->SetX(235);
+	$pdf->SetWidths(array(25,25));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('G','CH'));
+  	
+  	}
+
+  	//----
+  	//Tabla de recuperadas
+  	$pdf->SetY(55);
+  	$pdf->SetX(235);
+	$pdf->SetWidths(array(25,25));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('1','10'));
+  	
+  	}
+
+  	//--------
+  	//Tabla de no pagadas no devueltas 2
+  	$pdf->SetY(68);
+  	$pdf->SetX(235);
+	$pdf->SetWidths(array(50));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('SubTotal Recuperadas'));
+  	
+	}
+
+	//----
+  	//Tabla de recuperadas
+  	$pdf->SetY(73);
+  	$pdf->SetX(235);
+	$pdf->SetWidths(array(25,25));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(85,107,47);
+	$pdf->SetTextColor(255);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('G','CH'));
+  	
+  	}
+
+  	//----
+  	//Tabla de recuperadas
+  	$pdf->SetY(78);
+  	$pdf->SetX(235);
+	$pdf->SetWidths(array(25,25));
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetFillColor(255);
+	$pdf->SetTextColor(0);
+
+	for($i=0;$i<1;$i++){
+
+    $pdf->Row(array('$  _','$  _'));
+  	
+  	}
 
 
 	$pdf->Output();
