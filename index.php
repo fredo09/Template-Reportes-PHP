@@ -75,7 +75,9 @@
 		
   	}
 
+  	//---------------------
   	/*Salida Toallas*/
+  	
   	$pdf->SetY(81);
   	$pdf->SetX(35);
 	$pdf->SetWidths(array(50));
@@ -88,6 +90,7 @@
     $pdf->Row(array('Salida Toallas $00'));
  	}
 
+ 	//--------------------
  	/*Entrada Toallas*/
 
  	$pdf->SetY(87);
@@ -102,7 +105,9 @@
     $pdf->Row(array('Entrada Toallas $00'));
  	}
 
+ 	//---------------------
  	/*Subtotales*/
+
   	$pdf->SetY(95);
   	$pdf->SetX(10);
 	$pdf->SetWidths(array(25, 25, 25));
@@ -132,6 +137,7 @@
 		
   	}
 
+  	//---------------------
   	/*Total Facturas*/
 
  	$pdf->SetY(106);
@@ -146,6 +152,7 @@
     $pdf->Row(array('Total a Facturar'));
  	}
 
+ 	//--------------------
  	/*Calculo toallas Pagadas*/
 
  	$pdf->SetY(111);
@@ -157,9 +164,10 @@
 
 	for($i=0;$i<1;$i++){
 
-    $pdf->Row(array('Rentas del dia + toallas pagadas $000'));
+    $pdf->Row(array('Rentas del dia + toallas pagadas  $000'));
  	}
 
+ 	//----------------------
  	/*Rentas del Dia*/
 
  	$pdf->SetY(116.5);
@@ -171,7 +179,7 @@
 
 	for($i=0;$i<1;$i++){
 
-    $pdf->Row(array('Total de Rentas al dia $000'));
+    $pdf->Row(array('Total de Rentas al dia                    $000'));
  	}
 
 
@@ -229,6 +237,7 @@
 		
   	}
 
+  	//----------------
   	//Tabla de Dañadas Rotas Y Manchadas
   	$pdf->SetY(82);
   	$pdf->SetX(100);
@@ -256,6 +265,7 @@
   	
   	}
 
+  	//---------------
   	/*LLENADO*/
   	
  	for ($i=0; $i <2 ; $i++) { 
@@ -278,6 +288,7 @@
 		
   	}
 
+  	//------------------
   	/*Toallas Pagadas*/
 
  	$pdf->SetY(103);
@@ -291,6 +302,7 @@
     	$pdf->Row(array('Toallas Pagadas'));
  	}
 
+ 	//------------------------
  	/*Toallas Pagadas en total de desglose*/
 
  	$pdf->SetY(108);
@@ -306,7 +318,7 @@
     ' Total rentas dañadas manchadas y rotas $00')));
  	}
 
-
+ 	//--------------------
  	/*Rentas del Dia*/
 
  	$pdf->SetY(119);
@@ -321,7 +333,7 @@
     $pdf->Row(array(utf8_decode('Toallas dañadas $000')));
  	}
 
-
+ 	//-----------------------
  	/*Toallas del Manchadas*/
 
  	$pdf->SetY(124.5);
@@ -336,6 +348,7 @@
     $pdf->Row(array(utf8_decode('Toallas Manchadas  $000')));
  	}
 
+ 	//------------------
  	/*Toallas del Rotas*/
 
  	$pdf->SetY(130);
@@ -368,6 +381,7 @@
   	
   	}
 
+  	//-----------------
   	//Tabla de Subtotal pagadas y SubnoPagadas 
   	$pdf->SetY(55);
   	$pdf->SetX(180);
@@ -380,6 +394,7 @@
    		$pdf->Row(array('G','CH','G','CH'));
   	}
 
+  	//-----------
   	//Tabla de no pagadas no devueltas
   	$pdf->SetY(60);
   	$pdf->SetX(180);
@@ -407,7 +422,7 @@
   	
 	}
 
-
+	//-----------------
 	//Tabla de Subtotal NOpagadas y SubPagadas 
   	$pdf->SetY(73);
   	$pdf->SetX(180);
@@ -420,6 +435,7 @@
    		$pdf->Row(array('G','CH','G','CH'));
   	}
 
+  	//--------------
   	//Tabla de no pagadas no devueltas
   	$pdf->SetY(78);
   	$pdf->SetX(180);
@@ -446,6 +462,7 @@
     	$pdf->Row(array(utf8_decode('Toallas No Pagadas')));
  	}
 
+ 	//-----------
  	/*Toallas del Rotas dañadas rotas y manchadas en tabla de no pagadas*/
 
  	$pdf->SetY(85);
@@ -578,6 +595,7 @@
 
 	//--------------------------------------------------------------------------------
  	//								Cuarta fila 
+ 	
  	//----
   	//Tabla de recuperadas
   	$pdf->SetY(45);
