@@ -18,7 +18,7 @@
 	$pdf->SetY(45);
 	$pdf->SetWidths(array(20, 20, 25, 25, 25,25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -50,7 +50,7 @@
   	$pdf->SetX(10);
 	$pdf->SetWidths(array(25, 25, 25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -80,7 +80,7 @@
   	$pdf->SetX(35);
 	$pdf->SetWidths(array(50));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -94,7 +94,7 @@
   	$pdf->SetX(35);
 	$pdf->SetWidths(array(50));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -107,7 +107,7 @@
   	$pdf->SetX(10);
 	$pdf->SetWidths(array(25, 25, 25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -138,7 +138,7 @@
   	$pdf->SetX(10);
 	$pdf->SetWidths(array(75));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -148,11 +148,11 @@
 
  	/*Calculo toallas Pagadas*/
 
- 	$pdf->SetY(112);
+ 	$pdf->SetY(111);
   	$pdf->SetX(10);
 	$pdf->SetWidths(array(75));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -162,11 +162,11 @@
 
  	/*Rentas del Dia*/
 
- 	$pdf->SetY(117.5);
+ 	$pdf->SetY(116.5);
   	$pdf->SetX(10);
 	$pdf->SetWidths(array(75));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -185,7 +185,7 @@
   	$pdf->SetX(100);
 	$pdf->SetWidths(array(25, 25, 25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -198,7 +198,7 @@
   	$pdf->SetX(100);
 	$pdf->SetWidths(array(12.5, 12.5,12.5,12.5,12.5,12.5));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -234,7 +234,7 @@
   	$pdf->SetX(100);
 	$pdf->SetWidths(array(25, 25, 25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -247,7 +247,7 @@
   	$pdf->SetX(100);
 	$pdf->SetWidths(array(12.5, 12.5,12.5,12.5,12.5,12.5));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -284,7 +284,7 @@
   	$pdf->SetX(100);
 	$pdf->SetWidths(array(75));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -359,7 +359,7 @@
   	$pdf->SetX(180);
 	$pdf->SetWidths(array(25, 25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -373,7 +373,7 @@
   	$pdf->SetX(180);
 	$pdf->SetWidths(array(12.5,12.5,12.5, 12.5));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -398,7 +398,7 @@
   	$pdf->SetX(180);
 	$pdf->SetWidths(array(25, 25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -413,7 +413,7 @@
   	$pdf->SetX(180);
 	$pdf->SetWidths(array(12.5,12.5,12.5, 12.5));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -522,7 +522,7 @@
   	$pdf->SetX(180);
 	$pdf->SetWidths(array(50));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -552,7 +552,7 @@
   	$pdf->SetX(180);
 	$pdf->SetWidths(array(50));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -577,14 +577,14 @@
 	}
 
 	//--------------------------------------------------------------------------------
- 	//								Cuerta fila 
+ 	//								Cuarta fila 
  	//----
   	//Tabla de recuperadas
   	$pdf->SetY(45);
   	$pdf->SetX(235);
 	$pdf->SetWidths(array(50));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -599,7 +599,7 @@
   	$pdf->SetX(235);
 	$pdf->SetWidths(array(25,25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -629,7 +629,7 @@
   	$pdf->SetX(235);
 	$pdf->SetWidths(array(50));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
@@ -644,7 +644,7 @@
   	$pdf->SetX(235);
 	$pdf->SetWidths(array(25,25));
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetFillColor(85,107,47);
+	$pdf->SetFillColor(92,191,8);
 	$pdf->SetTextColor(255);
 
 	for($i=0;$i<1;$i++){
